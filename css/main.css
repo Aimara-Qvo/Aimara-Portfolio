@@ -86,189 +86,252 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/***** BASE STYLES *****/
+/* -------------------- General - Styles-------------------- */
+html {
+  font-size: 16px;
+}
+
 body {
   font-family:'Roboto';
-  color: #4C6B62;
+  font-size: 1em;
+  background-color:#080505;
 }
 
-main h2 { 
-  font-size: 30px;
-  text-align: center;
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f4e3;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Lato';
+  font-size: 1.75em;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.43em;
+  font-weight: 500;
+  color: #e2a850; 
+}
+
+h3,
+h4 {
+  font-size: 1.05em;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.25em;
+  color:#f8f4e3;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
   margin: 0;
-  padding: 30px;
 }
 
-#about h2, footer h2 {
-  color: #cac8ba;  
-}
-  
-/***** GRID *****/
-
-.full-width {
-  width: 1200px;
-  margin:  0 auto;
-  overflow: auto;
-}
-.half-width {
-  width: 600px;
-  float: left;
-}
-.third-width {
-  width: 400px;
-  float: left;
+/* -------------------- Base - Styles-------------------- */
+.content-wrapper {
+  width: 90%;
+  margin: 0;
 }
 
-/***** HEADER SECTION *****/
+/* ----------------- Base - Header-Hero-Footer - Styles-------------------- */
 
 header {
-  height: 800px;
-  background: url('../img/hero-image.png');
+  width: 100%;
+  flex-flow: row wrap;
+  background-color:#080505;
+  }
+
+.nav-bar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.nav-bar li {
+  padding: 10px;
+}
+
+/*---footer---*/
+footer {
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+  flex-direction: column;
+  background-image: url(../img/waves-separator.svg);
+}
+
+footer h2 {
+  margin-top: 40px;
+}
+/*.contact {
+  padding:50px 0 0;
   background-size: cover;
   background-position: center;
+  overflow: auto;
+}*/
+
+footer p {
+  margin: 0;
+  color: #f8f4e3;;
+}
+
+footer .content-wrapper {
+  width: 55%;
+}
+
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+footer .social-media p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #f8f4e3;;
+  overflow: hidden;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+}
+
+footer .social-media p i {
+  font-size: 1em;
+}
+footer .contact-me {
+  margin: 30px;
+}
+
+footer .attribution {
+  font-size: .565em;
+  margin: 70px 0 0;
+}
+
+/*----Hero-Section----*/
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-image: url('../img/hero-mobile.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+}
+
+.hero-area .content-wrapper {
+  width: 80%;
+  flex-direction: column;
   color: #cac8ba;
-  font-weight: 700;
 }
 
-nav {
-  float: right;
-  padding: 20px 150px;
+.hero-area h1 {
+  margin: 20px 0 0 10px;
+  color: #f28454;
 }
 
-nav ul li{
-  display: inline-block;
+.hero-area #parenthesis {
+  margin: 0;
 }
 
-nav ul li a {
-  color: #cac8ba;
-  font-weight: 700;
-  font-family: 'Roboto';
-  text-decoration:none;
-  font-size: 30px;
-  padding-left: 140px;
+.hero-area h2 {
+  margin: 280px 0 15px;
 }
 
-.presentation {
- float: right;
-  width: 800px;
-  text-align: right;
-  clear: both;
-  padding-top: 220px; 
-  padding-right:150px; 
-}
-
-header h1 {
-  font-family: 'Lato';
-  font-size: 65px;
-  font-weight: 700;
-  line-height:35px; 
-  margin:0 auto; 
-}
-
-header h2 {
-  font-size: 38px;
-  font-weight: 100;
-  margin:0 auto; 
-}
-
-.presentation mark {
-  font-size: 30px;
+.hero-area mark {
   color:#011312;
   background: #4c6b62;
 }
 
-/***** PORTFOLIO SECTION *****/
 
-#portfolio   h3 {
-  text-align: left;
+/*---Portfolio-Section---*/
+
+  .projects h2 {
+    margin: 30px 0
+  }
+  .project-card {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #080505;
+    border: 1px solid rgba(238, 236, 214, 0.116);
+    padding: 5px;
+    /*box-shadow: 5px 5px 5px rgb(56 51 51 / 90%);*/
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  .project-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#portfolio .full-width{
-  padding: 40px 0;
-}
-
-/***** ABOUT SECTION *****/
-#about {
-  padding: 100px;
-  background: #4c6b62;
-  background-size: cover;
-  background-position: center; 
-}
-
-#about h2 {
-  padding-top: 0;
-}
-
-#my_description {
-  background: #4c6b62;
-  color: #cac8ba;
-  line-height: 30px;
-}
-
-#my_description span {
-  font-weight: 700;
-}
-
-/***** FOOTER SECTION *****/
-
-#contact {
-  padding:50px 0 0;
-  background: #011312;;
-  background-size: cover;
-  background-position: center;
-  overflow: auto;
-}
-
-#contact .full-width {
+.projects p {
+  margin: 10px;
   padding: 0;
-  margin: 50px auto 0;  
 }
 
-#contact  h3, #contact  h4, #email a, #contact p  {
-  color: #cac8ba;
-}
-
-#contact .third-width h3 {
-  font-size: 24px ;
-  line-height: 32px;
-  width: 190px ;
-  margin: 30px auto;
-  padding-left: 30px;
-}
-
-#email a {
-  text-decoration:none;
-  font-size: 20px;
-  padding-left: 50px; 
-}
-
-#my_network  ul {
-  list-style: none;
-}
-
-#my_network  ul li {
-   display: inline-block;
-}
-
-#my_network  ul img {
-  padding-right: 48px;
-}
-
-#meet_me p {
-  font-size: 18px;
-  line-height: 30px;
-  padding: 0 50px 30px;
+.project-card h3 {
+  color: #FED766;
   margin: 0;
 }
 
-#meet_me img {
-  padding-left: 140px;  
+/*---About-Section---*/
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#contact h4 {
-  clear: both;
-  text-align: center;
-  margin: 90px auto 0;
+.about img {
+  margin: 20px 0;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #cac8ba;
+}
+
+.my-description span {
+  font-weight: 700;
 }
 
 /* ==========================================================================

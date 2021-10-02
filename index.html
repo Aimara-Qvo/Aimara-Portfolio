@@ -19,122 +19,120 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <!-- FontAwesome CDN version 5.5 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
 
-
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
   <!-- Add your site or application content here -->
-  <div class="content-wrapper">
-    <header div class="hero">
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="#portfolio">work [1]</a></li>
-          <li><a href="#about">about [2]</a></li>
-          <li><a href="#contact">contact [3]</a></li>
-        </ul>
-      </nav>
-      <div class="hero-content">
-        <h1>Hi there! I'm Aimara. </h1>
-        <h3><mark>(pronounce the a and i in the first syllable)</mark></h3>
-        <h2>I'm a web developer, creative thinker and<br> dog lover.</h2>
-      </div>
-    </header>
-    <main>
+  <header class="header">
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#portfolio">work [1]</a></li>
+        <li><a href="#about">about [2]</a></li>
+        <li><a href="#contact">contact [3]</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-area">
       <div class="content-wrapper">
-        <section id="portfolio">
-          <h2>My Portfolio</h2>
-          <article>
-            <img src="img/nemerie_portfolio_project.png" alt="Nemerie website">
-            <h3>Nemerie | Website</h3>
-            <p>HTML & CSS Artistic Portfolio</p>
-            <p>Artistic web portfolio designed for the online presence of a restless poet.
-              Hand-coded with lots of love and HTML5 and CSS technologies.
-              The framework for this site was designed with Photoshop software.
-            </p>
-          </article>
-
-          <article>
-            <figure>
-              <a href="https://aimaraqvo.github.io/ferrumey-responsive/index.html" target="_blank">
-                <img src="img/ferrunmey_project.png" alt="FerruMey website">
-              </a>
-            </figure>
-              <h3>FerruMey | Website</h3>
-              <p>HTML & CSS Commercial Website</p>
-              <p>Website designed for a small and flourishing steel company,
-                based in Santiago de Chile. With great attention to detail.
-                Site coded by hand with HTML5 and CSS technologies.
-                Design frame created with Photoshop software.
-              </p>
-          </article>
-        </section>
-
-        <section id="about">
-          <div class="content-wrapper">
-            <h2>About Me</h2>
-            <img src="img/about-me-picture.png" alt="About me picture">
-            <div id="my_description">
-              <p>I see myself as an artist who loves technology. Poetry's a natural language for me.
-                For me, coding is a way of communicating,
-                a way to make my voice heard.<br>
-                Translating ideas and feelings to websites is something
-                I fell in love with it as soon as I coded my own website.
-                Now I start my journey in the world of web development and it's AMAZING.
-              </p>
-              <p> Keeping things simple is the mantra that I practice on a daily basis.
-                So I feel comfortable applying that concept in the way I code.
-                Simplicity is beauty for me. That's why
-                I use my skills to write <span>simple and beautiful code.</span>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <footer id="contact">
-          <div class="content-wrapper">
-            <h2>Let's Connect</h2>
-            <h3>Follow me</h3>
-            <div class="social-media">
-              <ul>
-                <li><a href="https://twitter.com/NemerieGarcia" target="_blank">
-                    <img src="img/twitter.png" alt="twitter logo"></a></li>
-                <li><a href="https://github.com/Aimara-Qvo" target="_blank">
-                    <img src="img/github.png" alt="github logo"></a></li>
-                <li><a href="https://www.linkedin.com/in/aimara-garcia-cabezas-153465192/" target="_blank">
-                    <img src="img/linkedin.png" alt="linkedin logo"></a>
-
-                  <!-- other social links here -->
-              </ul>
-            </div>
-
-            <div class="contact-me"">
-              <h3>Hire me</h3>
-              <a href=" mailto:agc801030@gmail.com">agc801030@gmail.com</a>
-            </div>
-
-            <div class="meet-me">
-              <h3>Meet me</h3>
-              <a href="https://zoom.us/join" target="_blank">
-                <img src="img/zoom.png" alt="github logo"></a>
-              <p>Let's go to meetups together</p>
-            </div>
-            <div class="attribution">
-              <h4>Designed by Russianfactory | Develoved by Aimara García</h4>
-            </div>
-          </div>
-          <!--footer content-wrapper ends-->
-        </footer> <!-- footer content ends -->
+        <h1>Hi there! I'm Aimara </h1>
+        <h2 id="parenthesis">(pronounce the a and i in the first syllable)</h2>
+        <h2>I'm a web developer, creative thinker and dog lover.</h2>
       </div>
-    </main>
-  </div>
+    </section>
+
+    <section class="divider"></section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Nemerie | Website</h3>
+        <p>HTML & CSS Artistic Portfolio</p>
+        <p>Artistic web portfolio designed for the online presence of a restless poet.
+          Hand-coded with lots of love and HTML5 and CSS technologies.
+          The framework for this site was designed with Photoshop software.
+        </p>
+        <figure>
+          <a href="" target="_blank">
+            <img src="img/nemerie_portfolio_project.png" alt="Nemerie website">
+          </a>
+        </figure>
+      </div>
+
+      </div>
+      <div class="project-card">
+        <h3>FerruMey | Website</h3>
+        <p>HTML & CSS Commercial Website</p>
+        <p>Website designed for a small and flourishing steel company,
+          based in Santiago de Chile. With great attention to detail.
+          Site coded by hand with HTML5 and CSS technologies.
+          Design frame created with Photoshop software.
+        </p>
+        <figure>
+          <a href="https://aimaraqvo.github.io/ferrumey-responsive/index.html" target="_blank">
+            <img src="img/ferrunmey_project.png" alt="FerruMey website">
+          </a>
+        </figure>
+      </div>
+
+    </section>
+
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <div class="content-wrapper">
+        <img src="img/about-me-picture.png" alt="About me picture">
+        <span class="description">
+          <p>I'm a poet who loves to code, so for me, poetry is a natural language.
+             But I believe coding is also a way of communicating, of making my 
+             voice heard. Translating ideas and feelings on websites is something 
+             I fell in love with it as soon as I coded my own site. 
+          </p>
+          <p>Multi-curious, tireless web3, and decentralization enthusiast. I love 
+             and growing with the crypto community. Always learning, sharing 
+             readings, and having fun in the process. 
+          </p>
+          <p>A lover of DAOs and NFTs, I collaborate developing products that 
+            help inclusion. My way of building a more equitable and decentralized 
+            future.<span> For a more inclusive and empathetic Internet, a better one, 
+            which we deserve.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="content-wrapper">
+      <h2>Let's Connect</h2>
+      <div class="social-media">
+        <p><a href="https://twitter.com/NemerieGarcia" target="_blank">
+            <i class="fab fa-twitter"></i></a></p>
+        <p><a href="https://github.com/aimaraqvo" target="_blank">
+            <i class="fab fa-github-alt"></i></a></p>
+        <p><a href="https://www.linkedin.com/in/aimara-garcia-cabezas-153465192/" target="_blank">
+            <i class="fab fa-linkedin-in"></i></a>
+          <!-- other social links here -->
+      </div>
+
+      <div class="attribution">
+        <p>Designed by Russianfactory | Develoved by Aimara García</p>
+      </div>
+    </div>
+    <!--footer content-wrapper ends-->
+  </footer> <!-- footer content ends -->
 </body>
 
 </html>
