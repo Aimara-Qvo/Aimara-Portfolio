@@ -95,7 +95,7 @@ body {
   font-family:'Roboto';
   font-size: 1em;
   background-color:#080505;
-}
+}  
 
 ul,
 ol {
@@ -154,7 +154,7 @@ header {
   width: 100%;
   flex-flow: row wrap;
   background-color:#080505;
-  }
+}
 
 .nav-bar ul {
   display: flex;
@@ -169,16 +169,34 @@ header {
   padding: 10px;
 }
 
+main {
+  background-color: #2f2f33;
+}
+
+/*about me and projects box*/
+.svg-box {
+  margin: 50px 0;
+  outline: 4px solid #011312;
+  outline-offset: 4px;
+  background: none;
+}
+
+.svg-text {
+  text-transform: uppercase;
+}
+
+
 /*---footer---*/
 footer {
-  min-height: 250px;
+  background-image: url(../img/waves-separator.svg);
+  background-color: #2f2f33;
+  /*min-height: 250px;*/
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
   flex-direction: column;
-  background-image: url(../img/waves-separator.svg);
 }
 
 footer h2 {
@@ -192,17 +210,21 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
+  margin: 50px 0 0;
 }
 
-footer .social-media {
+footer .connect {
+  margin: 30px;
+}
+
+footer .social-icons {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 20px;
+  align-content: center;
+  /*flex-direction: row;*/
 }
 
-footer .social-media p {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,17 +240,6 @@ footer .social-media p i {
   font-size: 1em;
 }
 
-footer .social-icons{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: row;
-}
-
-footer .contact-me {
-  margin: 30px;
-}
-
 footer .attribution {
   font-size: .565em;
   margin: 70px 0 0;
@@ -242,7 +253,7 @@ footer .attribution {
   background-image: url('../img/hero-mobile.png');
   background-size: cover;
   background-position: center;
-  min-height: 570px;
+  min-height: 350px;
 }
 
 .hero-area .content-wrapper {
@@ -261,54 +272,12 @@ footer .attribution {
 }
 
 .hero-area h2 {
-  margin: 350px 0 15px;
+  margin: 300px 0 55px;
 }
 
 .hero-area mark {
   color:#011312;
   background: #4c6b62;
-}
-
-
-/*---Portfolio-Section---*/
-
-  .projects h2 {
-    margin: 30px 0
-  }
-  .project-card {
-    width: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #080505;
-    border: 1px solid rgba(238, 236, 214, 0.116);
-    padding: 5px;
-    /*box-shadow: 5px 5px 5px rgb(56 51 51 / 90%);*/
-    border-radius: 4px;
-    margin-bottom: 30px;
-  }
-
-  .project-card img {
-    width: 100%;
-    border-radius: 5px;
-  }
-
-.projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.projects p {
-  margin: 10px;
-  padding: 0;
-}
-
-.project-card h3 {
-  color: #FED766;
-  margin: 0;
 }
 
 /*---About-Section---*/
@@ -318,6 +287,10 @@ footer .attribution {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.about h2 {
+  margin: 20px 0;
 }
 
 .about img {
@@ -335,6 +308,63 @@ footer .attribution {
 .my-description span {
   font-weight: 700;
 }
+
+/*---Portfolio-Section---*/
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+  .projects-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    width: 100%;
+    background: url('../img/leafs.jpeg') ;
+    background-size: cover;
+  }
+
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .project-card {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*background-color: #080505;*/
+    border: 1px solid rgba(238, 236, 214, 0.116);
+    padding: 15px;
+    /*box-shadow: 5px 5px 5px rgb(56 51 51 / 90%);*/
+    border-radius: 4px;
+    margin-bottom: 40px;
+  }
+
+  .project-card img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+.projects p {
+  margin: 10px;
+  padding: 0;
+}
+
+.project-card h3 {
+  color: #FED766;
+  margin: 0;
+}
+
+
 
 /* ==========================================================================
    Helper classes
@@ -424,9 +454,137 @@ footer .attribution {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet styles goes here*/
+  /*--------------------General - Styles -----------------------*/
+  h1 {
+    font-size: 3.55em;
+    line-height: 1.1;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    line-height: 1.2;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
+  p {
+    font-size: 1.04em;
+  }
+
+  .content-wrapper {
+    max-width: 75%;
+    margin: 50px 0;
+  }
+
+  /* Header - Styles*/
+  header {
+  min-height: 90px;
+  }
+
+/* Hero - Styles */
+.hero-area {
+  min-height: 840px;
+  background-image:url('../img/hero-tablet.png');
 }
+
+.hero-area h1 {
+  margin: 0 20px;
+}
+
+.hero-area h2 {
+  margin: 450px 0 15px;
+}
+
+/* Footer styles*/
+
+footer .content-wrapper {
+  width: 65%;
+  margin: 50px 0;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+footer h4 {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+footer p {
+  line-height: 1.185;
+}
+
+footer .social-icons {
+  
+  width: 12.5em;
+  justify-content: space-between;
+}
+
+footer .copyright {
+    width: 100%;
+}
+
+footer .copyright p {
+  font-size: .9em;
+}
+
+/*Projects - styles*/ 
+.projects {
+  /*flex-direction: row;
+  justify-content: space-evenly;*/
+}
+
+.gallery {
+  width: 85%;
+  flex-direction: row;
+}
+.project-card {
+  
+  /*display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #080505;
+  border: 1px solid rgba(238, 236, 214, 0.116);
+  padding: 15px;
+  /*box-shadow: 5px 5px 5px rgb(56 51 51 / 90%);
+  border-radius: 4px;
+  margin-bottom: 40px;*/
+  justify-content: sp;
+}
+
+/*About-me - styles*/ 
+.about .content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.about img {
+  width: 50%;
+}
+
+
+}
+
+
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
