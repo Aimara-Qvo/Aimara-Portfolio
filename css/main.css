@@ -145,7 +145,7 @@ figure {
 /* -------------------- Base - Styles-------------------- */
 .content-wrapper {
   width: 90%;
-  margin: 0;
+  margin: 0 0 50px;
 }
 
 /* ----------------- Base - Header-Hero-Footer - Styles-------------------- */
@@ -210,7 +210,6 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
-  margin: 50px 0 0;
 }
 
 footer .connect {
@@ -242,7 +241,7 @@ footer .social-media p i {
 
 footer .attribution {
   font-size: .565em;
-  margin: 70px 0 0;
+  margin: 115px 0 0;
 }
 
 /*----Hero-Section----*/
@@ -322,9 +321,9 @@ footer .attribution {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 50px;
+    min-height: 180px;
     width: 100%;
-    background: url('../img/leafs.jpeg') ;
+    background: url('../img/sunset.png') ;
     background-size: cover;
   }
 
@@ -344,9 +343,9 @@ footer .attribution {
     /*background-color: #080505;*/
     border: 1px solid rgba(238, 236, 214, 0.116);
     padding: 15px;
-    /*box-shadow: 5px 5px 5px rgb(56 51 51 / 90%);*/
+    box-shadow: 5px 5px 5px rgb(56 51 51 / 90%);
     border-radius: 4px;
-    margin-bottom: 40px;
+    margin: 40px; 
   }
 
   .project-card img {
