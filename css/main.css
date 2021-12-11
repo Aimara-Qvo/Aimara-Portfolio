@@ -185,7 +185,6 @@ main {
   text-transform: uppercase;
 }
 
-
 /*---footer---*/
 footer {
   background-image: url(../img/waves-separator.svg);
@@ -210,6 +209,7 @@ footer p {
 
 footer .content-wrapper {
   width: 55%;
+  margin: 0 0 20px;
 }
 
 footer .connect {
@@ -240,8 +240,8 @@ footer .social-media p i {
 }
 
 footer .attribution {
-  font-size: .565em;
-  margin: 115px 0 0;
+  font-size: .630em;
+  margin: 125px 0 0;
 }
 
 /*----Hero-Section----*/
